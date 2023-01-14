@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Villeurbanne</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head> 
+
+    <body>
+        <div class="container mt-3">
+            <ul class="nav nav-pills justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Le budget en bref</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Le budget en détail</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+        </div>
+        <main id="main" class="container-fluid">
+            <div class="row title">
+                <div class="col-lg-12">
+                    <h1>Le budget en détail</h1>
+                </div>
+            </div>
+
+            <div class="row presentation">
+                <div class="col-lg-12">
+                    <p class="sousTitre">Budget prévisionnel 2021</p>
+                    <span class="chiffre">216 843 266 €</span>
+                    <p>Voté en conseil municipale<br> le 16 décembre 2022</p>
+                </div>
+            </div>
+            
+            <div class="row composition">
+                <div class="col-lg-12">
+                    <h2>Les recettes</h2>
+                    <div class="composants">
+                        <div class="recettes">
+                            <div class="texte" >
+                                <h3>des recettes</h3>
+                                <p>Ressources dont dispose<br>Villeurbanne<br>pour financer ses dépenses.</p>
+                            </div>
+                            <div class="piechart" >
+                                <div class="donnees">
+                                    <ul class="legendRecette"></ul>
+                                </div>
+                                <div id="piechart_recette">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="depenses">
+                            <div class="texte">
+                                <p>
+                                    Les recettes du Département permettent 
+                                    de financer les dépenses. 
+                                    Elles proviennent principalement du produit 
+                                    des impôts et taxes ainsi que des concours financiers externes.
+                                </p>
+                                <p>Cliquez sur chaque chapitre pour en savoir plus :</p>
+                            </div>
+                            <div class="piechart" >
+                                <div id="piechart_depense">
+                                </div>
+                                <div class="donnees">
+                                    <ul class="legendDepense"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row parts">
+                <div class="col-lg-12 lignePart">
+                    <div id="piechart_part">
+                    </div>
+                    <div class="texte">
+                        <h4>C'est la part du budget directement consacrée au service des habitant·es.</h4>
+                        <p>
+                            1 398 296 589€ seront ainsi consacrés en 2021 au service des habitant·es de Loire-Atlantique, 
+                            soit 94,8% du budget. Les 5,2% restants concernent les opérations d'emprunt et de trésorerie.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row investissement">
+                <div class="col-lg-12">
+                    <h2>Maintien d'un haut niveau d'investissement</h2>
+                    <div class="resume">
+                        <p class="chiffre aos-item" data-aos="fade-right" data-aos-duration="1000" data-aos-mirror="true">232,4 <span>millions €</span></p>
+                        <p class="explication aos-item " data-aos="fade-left" data-aos-duration="1000" data-aos-mirror="true">
+                            <strong>d'investissement</strong> pour développer les services
+                            publics aux habitant·es et soutenir les territoires.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row dotations-depenses">
+                <div class="col-lg-12">
+                    <h2>Les dotations de l'État réduites et des dépenses de solidarité en hausse</h2>
+                    <div class="composants">
+                        <div class="dotation">
+                            <div class="texte">
+                                <h3>Dotations de l'État</h3>
+                                <h4>68 millions d'euros de pertes annuelles</h4>
+                                <p>
+                                    Les concours financiers de l'État visent à compenser en partie le
+                                    financement des missions de service public transférées de l'État
+                                    vers la Ville par les lois de décentralisation. Depuis
+                                    2014 ces concours financiers ont connu un recul de 29%.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="allocation">
+                            <div class="texte">
+                                <h3>Allocations Individuelles de Solidarité</h3>
+                                <h4>36% de hausse depuis 2014</h4>
+                                <p>
+                                    Les allocations individuelles de solidarité (AIS) que le Département
+                                    est appelé à financer sont au nombre de trois :
+                                </p>
+                                <ul>
+                                    <li> Le revenu de solidarité active (RSA) : 32 425 allocataires</li>
+                                    <li> L'allocation personnalisée d'autonomie (APA) : 11 158 allocataires</li>
+                                    <li> La prestation de compensation du handicap (PCH) : 9 152 allocataires</li>
+                                </ul>
+                                <p>
+                                    Depuis 2014, les crédits consacrés aux AIS ont augmenté de 36 %. Sous l’effet la crise 
+                                    sanitaire cette augmentation a connu une très forte accélération, +13% en seulement un an.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphique">
+                        <div id="scatter_dotations-depenses"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row autonomie">
+                <div class="col-lg-12">
+                    <h2>La fin de l'autonomie fiscale</h2>
+                    <div class="resume aos-item" data-aos="fade-right" data-aos-duration="500" data-aos-mirror="true">
+                        <p class="explication aos-item" data-aos="fade-right" data-aos-duration="500" data-aos-mirror="true">
+                            2021 marque la fin de l'autonomie fiscale des Départements. Jusqu'ici Villeurbanne recevait une partie de la taxe 
+                            foncière payée par les propriétaires immobiliers. Cette part départementale revient désormais aux communes pour 
+                            compenser la suppression de la taxe d'habitation. Ce changement voulu par l'État a de lourdes conséquences. 
+                            En effet le Département n’a plus aucune marge pour ajuster ses recettes, hormis l'endettement et devient le seul 
+                            niveau de collectivité sans autonomie fiscale.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row economies">
+                <div class="col-lg-12">
+                    <h2>Des dépenses de personnel maîtrisées</h2>
+                    <div class="resume">
+                        <div class="left" data-aos="fade-right" data-aos-duration="1000" data-aos-mirror="true">
+                            <p class="agents">2000 agent·es</p>
+                            <p class="explication">
+                                au service des habitant·es de Villeurbanne
+                            </p>
+                        </div>
+                        <div class="right" data-aos="fade-left" data-aos-duration="1000" data-aos-mirror="true">
+                            <p class="agents">soit 3,05 agent·es pour 1000 habitant·es</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row postes">
+                <div class="col-lg-12">
+                    <h2>les 5 postes de dépenses les plus importants</h2>
+                    <h2>pour l'année 2021</h2>
+                    <div class="liste">
+                        <div class="poste">
+                            <a href="" target="_blank" title="">
+                                <div class="picto-poste">
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="poste">
+                            <a href="" target="_blank" title="">
+                                <div class="picto-poste">
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="poste">
+                            <a href="" target="_blank" title="">
+                                <div class="picto-poste">
+                                    
+                                </div>
+                            </a>
+                        </div>
+                        <div class="poste">
+                            <a href="" target="_blank" title="">
+                                <div class="picto-poste">
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="poste">
+                            <a href="" target="_blank" title="">
+                                <div class="picto-poste">
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <!-- Import jquery -->
+        <script src="js/jquery-3.6.0.js"></script>
+        <!-- Import bootstrap -->
+        <script src="js/bootstrap.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Import D3 -->
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="js/piechart_recette_copy.js"></script>
+        <script src="js/piechart_depenseCopy.js"></script>
+        <script src="js/piechart_partCopy.js"></script>
+        <script src="js/test.js"></script>
+        <script src="csv/partie.csv"></script>
+        <script src="js/scatter_dotations-depensesCopy.js"></script>
+        <script src="js/legend.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

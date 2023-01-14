@@ -1,0 +1,546 @@
+P {
+  font-size: inherit;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+HTML {
+  font-size: 100%;
+}
+HTML #main .title  {
+  padding: 2rem 0;
+  margin: 0 auto;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+HTML #main .title H1 {
+  font-family: 'Shadows Into Light Two';
+  font-size: 3.75rem;
+  padding: 2rem 0;
+  margin: 0 auto;
+  font-weight: 700;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+HTML #main .title H1::before {
+  z-index: -1;
+  position: absolute;
+  left: -2%;
+  bottom: 1.7rem;
+  content: '';
+  background-color: #0194AA;
+  width: 104%;
+  height: 2rem;
+}
+HTML #main .presentation {
+  background-color: #0194AA;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  text-align: center;
+}
+HTML #main .presentation P {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+ font-family: 'Roboto';
+}
+HTML #main .presentation .sousTitre {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+HTML #main .presentation .chiffre {
+  font-size: 6rem;
+  font-family: 'Roboto';
+}
+HTML #main .composition {
+  padding-top: 6rem;
+}
+HTML #main .composition H2 {
+  width: 60%;
+  margin: 0 auto;
+  border: 3px solid #0194AA;
+  background-color: #fff;
+  font-size: 2rem;
+  font-family: 'Shadows Into Light Two';
+  line-height: 2.2rem;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  text-align: center;
+  font-weight: bold;
+}
+HTML #main .composition .composants {
+  display: flex;
+}
+HTML #main .composition .composants .recettes,
+HTML #main .composition .composants .depenses {
+  width: 50%;
+  padding-top: 161px;
+}
+HTML #main .composition .composants .recettes .texte,
+HTML #main .composition .composants .depenses .texte {
+  height: 25rem;
+}
+HTML #main .composition .composants .recettes .texte P,
+HTML #main .composition .composants .depenses .texte P {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+HTML #main .composition .composants .recettes .piechart .title,
+HTML #main .composition .composants .depenses .piechart .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  font-weight: bold;
+  
+}
+HTML #main .composition .composants .recettes .texte {
+  padding-right: 6rem;
+}
+HTML #main .composition .composants .recettes .texte H3,
+HTML #main .composition .composants .depenses .texte H3 {
+  margin-left: auto;
+  font-family: 'Shadows Into Light Two';
+}
+HTML #main .composition .composants .recettes .texte P {
+  padding-right: 9rem;
+  margin-left: auto;
+  text-align: right;
+  font-family:'Roboto'
+}
+HTML #main .composition .composants .recettes .piechart {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+HTML #main .composition .composants .recettes .piechart .legendRecette LI.label {
+  text-align: right;
+  font-size: 1rem;
+  list-style-type: none;
+  font-family:'Roboto'
+}
+HTML #main .composition .composants .recettes .piechart .legendRecette LI.label.text.tooltip {
+  display:block;
+}
+
+HTML #main .composition .composants .recettes .piechart .legendRecette LI.label P {
+  padding: 0;
+  line-height: 1;
+}
+HTML #main .composition .composants .recettes .piechart .legendRecette LI.label P.chiffre{
+  font-size: 1rem;
+  font-family:'Roboto'
+}
+HTML #main .composition .composants .recettes .piechart #piechart_recette {
+  position: relative;
+}
+HTML #main .composition .composants .depenses .texte {
+  padding-left: 6rem;
+}
+HTML #main .composition .composants .depenses .texte H3 {
+  margin-right: auto;
+}
+HTML #main .composition .composants .depenses .texte H4 {
+  padding-left: 9rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-family:'Roboto'
+}
+HTML #main .composition .composants .depenses .texte P {
+  padding-left: 9rem;
+  margin-right: auto;
+  text-align: left;
+  font-family:'Roboto'
+}
+HTML #main .composition .composants .depenses .piechart {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+HTML #main .composition .composants .depenses .piechart #piechart_depense {
+  position: relative;
+}
+HTML #main .composition .composants .depenses .piechart .legendDepense {
+  padding: 0;
+}
+HTML #main .composition .composants .depenses .piechart .legendDepense LI.label {
+  text-align: left;
+  font-size: 1rem;
+  list-style-type: none;
+  font-family:'Roboto'
+  
+}
+HTML #main .composition .composants .depenses .piechart .legendDepense LI.label P {
+  padding: 0;
+  line-height: 1;
+}
+HTML #main .composition .composants .depenses .piechart .legendDepense LI.label P.chiffre {
+  font-size: 2rem;
+  font-family:'Roboto'
+}
+HTML #main .composition H3 {
+  width: 16rem;
+  color: #000;
+  background-color: #0194AA;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  padding: 1rem 1.2rem;
+  border-radius: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+HTML #main .parts {
+  background-color: #E6E6E6;
+  margin-bottom: 200px;
+}
+HTML #main .parts .lignePart {
+  display: flex;
+}
+HTML #main .parts .lignePart #piechart_part .title {
+  position: absolute;
+  top: 40%;
+  left: 21%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+HTML #main .parts .lignePart .texte {
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+  padding-top: 4.5rem;
+  padding-left: 1rem;
+  float: left;
+  position: relative;
+  font-family:'Roboto'
+}
+HTML #main .parts .lignePart .texte H4 {
+  width: 80%;
+  line-height: 1.6;
+  font-weight: bold;
+}
+HTML #main .investissement {
+  position: relative;
+  width: 80%;
+  padding-bottom: 2rem;
+  margin: 0 10%;
+  background-color: #0194AA;
+}
+HTML #main .investissement H2 {
+  padding-top: 5rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family:'Shadows Into Light Two'
+}
+HTML #main .investissement .resume {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 56%;
+  height: 10rem;
+  margin: 0 22%;
+  padding-top: 1rem;
+}
+HTML #main .investissement .resume .chiffre {
+  width: 41%;
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-family:'Roboto';
+  line-height: 0.8;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+HTML #main .investissement .resume .chiffre SPAN {
+  font-size: 2.8rem;
+  font-family:'Roboto';
+}
+HTML #main .investissement .resume .explication {
+  width: 60%;
+  font-size: 1rem;
+  font-family:'Roboto';
+  line-height: 1.8rem;
+}
+HTML #main .dotations-depenses {
+  padding-top: 6rem;
+}
+HTML #main .dotations-depenses H2 {
+  width: 60%;
+  margin: 0 auto;
+  border: 3px solid #0194AA;
+  background-color: #fff;
+  font-size: 2rem;
+  font-family:'Shadows Into Light Two';
+  line-height: 2.2rem;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+HTML #main .dotations-depenses .composants {
+  display: flex;
+}
+HTML #main .dotations-depenses .composants .dotation,
+HTML #main .dotations-depenses .composants .allocation {
+  width: 50%;
+  padding-top: 2rem;
+}
+HTML #main .dotations-depenses .composants .dotation .texte H4,
+HTML #main .dotations-depenses .composants .allocation .texte H4 {
+  color: #0194AA;
+  margin-bottom: 1rem;
+}
+HTML #main .dotations-depenses .composants .dotation .texte P,
+HTML #main .dotations-depenses .composants .allocation .texte P {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-family:'Roboto';
+}
+HTML #main .dotations-depenses .composants .dotation {
+  padding-right: 6rem;
+  padding-left: 10%;
+}
+HTML #main .dotations-depenses .composants .dotation H3,
+HTML #main .dotations-depenses .composants .dotation H4 {
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.6rem;
+  font-size: 1.4rem;
+  margin-left: auto;
+  text-align: right;
+  font-family:'Roboto';
+}
+HTML #main .dotations-depenses .composants .dotation P {
+  margin-left: auto;
+  text-align: right;
+}
+HTML #main .dotations-depenses .composants .allocation {
+  padding-left: 6rem;
+  padding-right: 10%;
+}
+HTML #main .dotations-depenses .composants .allocation H3,
+HTML #main .dotations-depenses .composants .allocation H4 {
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.6rem;
+  font-size: 1.4rem;
+  font-family:'Roboto';
+}
+HTML #main .dotations-depenses .composants .allocation P {
+  margin-right: auto;
+  text-align: left;
+}
+HTML #main .dotations-depenses .composants .allocation UL {
+  margin-left: 1.25rem;
+  padding: 0;
+}
+HTML #main .dotations-depenses .graphique {
+  background-color: #f4f4f4;
+  padding: 3rem;
+  border-radius: 3rem;
+  margin: 5rem 10% 12rem 10%;
+}
+HTML #main .dotations-depenses .graphique #scatter_dotations-depenses {
+  position: relative;
+  padding: 3rem 0% 0 0%;
+  margin: 0 auto;
+  text-align: center;
+}
+HTML #main .autonomie {
+  width: 80%;
+  padding-bottom: 2rem;
+  margin: 0 10%;
+  background-color: #0194AA;
+}
+HTML #main .autonomie H2 {
+  padding-top: 5rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family:'Shadows Into Light Two';
+}
+HTML #main .autonomie .resume {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin: 0 10%;
+  padding-top: 1rem;
+}
+HTML #main .autonomie .resume .explication {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-family:'Roboto';
+  
+}
+HTML #main .economies {
+  position: relative;
+  width: 80%;
+  margin: 0 10%;
+  padding-bottom: 5rem;
+  background-color: #E6E6E6;
+}
+HTML #main .economies H2 {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family:'Shadows Into Light Two';
+}
+HTML #main .economies .resume {
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: 0 10%;
+  padding-top: 1rem;
+}
+HTML #main .economies .resume .left,
+HTML #main .economies .resume .right {
+  width: 48%;
+  margin: 1%;
+  padding: 1rem 0;
+}
+HTML #main .economies .resume .left::before,
+HTML #main .economies .resume .right::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 8px;
+}
+HTML #main .economies .resume .left::after,
+HTML #main .economies .resume .right::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8px;
+}
+HTML #main .economies .resume .left .agents,
+HTML #main .economies .resume .right .agents {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: bold;
+  font-family:'Roboto';
+}
+HTML #main .economies .resume .left .explication,
+HTML #main .economies .resume .right .explication {
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 1.1;
+  font-family:'Roboto';
+}
+HTML #main .postes {
+  padding-top: 6rem;
+  background: #E6E6E6;
+}
+HTML #main .postes H2 {
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  font-family:'Shadows Into Light Two';
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+#scatter_dotations-depenses{
+  position: relative;
+  transform: translateY(0);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+#scatter_dotations-depenses.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#piechart_recette{
+  position: relative;
+  transform: translateY(0);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+#piechart_recette.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#piechart_depense{
+  position: relative;
+  transform: translateY(0);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+#piechart_depense.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.label{
+  position: relative;
+  transform: translateY(0);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.label.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.chiffre{
+  position: relative;
+  transform: translateY(0);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.chiffre.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.chiffre {
+  animation-name: progress-bar;
+  animation-duration: 5s;    
+}
+
+@keyframes progress-bar{
+  0% {
+      transform: scaleX(0);
+  }
+  100% {
+      transform: scaleX(1);
+  }
+}
+
+
+
+
+
+

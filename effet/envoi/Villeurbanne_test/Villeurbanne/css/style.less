@@ -1,0 +1,503 @@
+// -------------------------------------------------------------------
+// PLUGINS LESS VARIABLES
+// -------------------------------------------------------------------
+@import "variables/variables.less";
+
+// -------------------------------------------------------------------
+// RESET
+// -------------------------------------------------------------------
+P {
+    font-size: inherit;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+}
+
+HTML {
+    font-size: 100%;
+
+    #main {
+        
+        .title {
+            
+            H1 {
+                font-size: 3.75rem;
+                padding: 2rem 0;
+                margin: 0 auto;
+                font-weight: 700;
+                position: relative;
+                width: -webkit-fit-content;
+                width: -moz-fit-content;
+                width: fit-content;
+
+                &::before {
+                    z-index: -1;
+                    position: absolute;
+                    left: -2%;
+                    bottom: 1.7rem;
+                    content: '';
+                    background-color: @colorPrimary;
+                    width: 104%;
+                    height: 2rem;
+                }
+            }
+        }
+
+        .presentation {
+            background-color: @colorPrimary;
+            padding-top: 5em;
+            padding-bottom: 5em;
+            text-align: center;
+
+            P {
+                padding: 0;
+                margin: 0;
+                font-size: 1rem;
+            }
+            
+            .sousTitre {
+                font-size: 1.4rem;
+                margin-bottom: 0;
+            }
+
+            .chiffre {
+                font-size: 5.875rem;
+            }
+        }
+
+        .composition {
+            padding-top: 6rem;
+
+            H2 {
+                width: 60%;
+                margin: 0 auto;
+                border: 3px solid @colorPrimary;
+                background-color: #fff;
+                font-size: 2rem;
+                line-height: 2.2rem;
+                padding: 1rem 2rem;
+                border-radius: 4rem;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .composants {
+                display: flex;
+
+                .recettes, .depenses {
+                    width: 50%;
+                    padding-top: 161px;
+                    
+                    .texte {
+                        height: 25rem;
+
+                        P {
+                            font-size: 1rem;
+                            line-height: 1.4rem;
+                        }
+                    }
+
+                    .piechart {
+
+                        .title {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 1.4rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                
+                .recettes {
+                    
+                    .texte {
+                        padding-right: 6rem;
+
+                        H3 {
+                            margin-left: auto;
+                        }
+    
+                        P {
+                            padding-right: 9rem;
+                            margin-left: auto;
+                            text-align: right;
+                        }
+                    }
+                    
+                    .piechart {
+                        display: flex;
+                        justify-content: right;
+                        align-items: center;
+
+                        .legendRecette {
+
+                            LI.label {
+                                text-align: right;
+                                font-size: 1rem;
+                                list-style-type: none;
+
+                                P {
+                                    padding: 0;
+                                    line-height: 1;
+
+                                    &.chiffre {
+                                        font-size: 2rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        #piechart_recette {
+                            position: relative;
+                        }
+                    }
+                }
+
+                .depenses {
+                    
+                    .texte {
+                        padding-left: 6rem;
+
+                        H3 {
+                            margin-right: auto;
+                        }
+    
+                        H4 {
+                            padding-left: 9rem;
+                            font-weight: bold;
+                            line-height: 1.4rem;
+                            margin-bottom: 0;
+                            font-size: 1rem;
+                        }
+    
+                        P {
+                            padding-left: 9rem;
+                            margin-right: auto;
+                            text-align: left;
+                        }
+                    }
+
+                    .piechart {
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+
+                        #piechart_depense {
+                            position: relative;
+                        }
+
+                        .legendDepense {
+                            padding: 0;
+
+                            LI.label {
+                                text-align: left;
+                                font-size: 1rem;
+                                list-style-type: none;
+
+                                P {
+                                    padding: 0;
+                                    line-height: 1;
+
+                                    &.chiffre {
+                                        font-size: 2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            H3 {
+                width: 16rem;
+                color: #000;
+                background-color: @colorPrimary;
+                font-size: 1.8rem;
+                line-height: 1.8rem;
+                padding: 1rem 1.2rem;
+                border-radius: 4rem;
+                text-align: center;
+                margin-bottom: 2rem;
+                font-weight: bold;
+            }
+        }
+
+        .parts {
+            background-color: @colorSecondary;
+            margin-bottom: 200px;
+
+            .lignePart {
+                display: flex;
+                
+                .texte {
+                    display: flex;
+                    flex-direction: column;
+                    width: 29%;
+                    padding-top: 4.5rem;
+                    padding-left: 1rem;
+                    float: left;
+                    position: relative;
+    
+                    H4 {
+                        width: 80%;
+                        line-height: 1.6;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .investissement {
+            position: relative;
+            width: 80%;
+            padding-bottom: 2rem;
+            margin: 0 10%;
+            background-color: @colorPrimary;
+
+            H2 {
+                padding-top: 5rem;
+                padding-bottom: 0;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            .resume {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 56%;
+                height: 10rem;
+                margin: 0 22%;
+                padding-top: 1rem;
+
+                .chiffre {
+                    width: 41%;
+                    font-size: 4.5rem;
+                    font-weight: bold;
+                    line-height: .8;
+                    text-align: center;
+                    margin-right: 0.5rem;
+
+                    SPAN {
+                        font-size: 2.8rem;
+                    }
+                }
+
+                .explication {
+                    width: 60%;
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
+                }
+            }
+        }
+
+        .dotations-depenses {
+            padding-top: 6rem;
+
+            H2 {
+                width: 60%;
+                margin: 0 auto;
+                border: 3px solid @colorPrimary;
+                background-color: #fff;
+                font-size: 2rem;
+                line-height: 2.2rem;
+                padding: 1rem 2rem;
+                border-radius: 4rem;
+                margin-bottom: 0;
+                text-align: center;
+                margin-bottom: 4rem;
+            }
+
+            .composants {
+                display: flex;
+
+                .dotation, .allocation {
+                    width: 50%;
+                    padding-top: 2rem;
+                    
+                    .texte {
+
+                        H4 {
+                            color: @colorPrimary;
+                            margin-bottom: 1rem;
+                        }
+
+                        P {
+                            font-size: 1rem;
+                            line-height: 1.4rem;
+                        }
+                    }
+                }
+                
+                .dotation {
+                    padding-right: 6rem;
+                    padding-left: 10%;
+
+                    H3, H4 {
+                        font-weight: bold;
+                        margin-bottom: 0;
+                        line-height: 1.6rem;
+                        font-size: 1.4rem;
+                        margin-left: auto;
+                        text-align: right;
+                    }
+
+                    P {
+                        margin-left: auto;
+                        text-align: right;
+                    }
+                }
+
+                .allocation {
+                    padding-left: 6rem;
+                    padding-right: 10%;
+
+                    H3, H4 {
+                        font-weight: bold;
+                        margin-bottom: 0;
+                        line-height: 1.6rem;
+                        font-size: 1.4rem;
+                    }
+
+                    P {
+                        margin-right: auto;
+                        text-align: left;
+                    }
+
+                    UL {
+                        margin-left: 1.25rem;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .graphique {
+                background-color: #f4f4f4;
+                padding: 3rem;
+                border-radius: 3rem;
+                margin: 5rem 10% 12rem 10%;
+
+                #scatter_dotations-depenses {
+                    position: relative;
+                    padding: 3rem 0% 0 0%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+        }
+
+        .autonomie {
+            width: 80%;
+            padding-bottom: 2rem;
+            margin: 0 10%;
+            background-color: @colorPrimary;
+
+            H2 {
+                padding-top: 5rem;
+                padding-bottom: 0;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            .resume {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 80%;
+                height: auto;
+                margin: 0 10%;
+                padding-top: 1rem;
+
+                .explication {
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
+                }
+            }
+        }
+
+        .economies {
+            position: relative;
+            width: 80%;
+            margin: 0 10%;
+            padding-bottom: 5rem;
+            background-color: @colorSecondary;
+
+            H2 {
+                text-align: center;
+                padding-top: 5rem;
+                padding-bottom: 0;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            .resume {
+                position: relative;
+                display: flex;
+                width: 80%;
+                height: auto;
+                margin: 0 10%;
+                padding-top: 1rem;
+
+                .left, .right {
+                    width: 48%;
+                    margin: 1%;
+                    padding: 1rem 0;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 8px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 8px;
+                    }
+
+                    .agents {
+                        width: 100%;
+                        font-size: 3rem;
+                        line-height: 1;
+                        font-weight: bold;
+                    }
+
+                    .explication {
+                        width: 100%;
+                        font-size: 1.4rem;
+                        line-height: 1.1;
+                    }
+                }
+            }
+        }
+
+        .postes {
+            padding-top: 6rem;
+            background: @colorSecondary;
+
+            H2 {
+                text-align: center;
+                z-index: 10;
+                position: relative;
+                font-size: 2.5rem;
+                line-height: 1.1;
+                font-weight: 700;
+                width: -moz-fit-content;
+                width: -webkit-fit-content;
+                width: fit-content;
+                margin: 0 auto;
+            }
+        }
+    }
+}

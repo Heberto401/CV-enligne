@@ -319,6 +319,7 @@ p
 .about .box
 {
     margin:20px 0;
+    display: block;
 }
 .about .box .année
 {
@@ -371,5 +372,13 @@ p
     color:#333;
     font-size: 15px;
     margin-left: 50px;
+}
+@media (max-width:1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 

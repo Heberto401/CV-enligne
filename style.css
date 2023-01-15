@@ -332,14 +332,14 @@ p
 
 .about .box .text .tooltiptext {
   visibility: hidden;
-  width: 190px;
+  width: 160px;
   height: max-content;
   background: #d7e60b;
   border: #000 1px solid;
   color: #333;
   text-align: center;
   border-radius: 6px;
-  left: 100%;
+  left: 95%;
   padding: 20px;
 
   /* Position the tooltip */

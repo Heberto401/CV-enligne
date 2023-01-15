@@ -149,6 +149,7 @@ body
     font-weight: 100;
     font-style: italic;
 }
+
 .contactInfo.Language .percent
 {
     position: relative;
@@ -234,6 +235,19 @@ body
     color:#fff;
 
 }
+.Certification h5
+{
+    color:#03a9fa;
+    font-weight: 500;
+
+}
+.Certification h4
+{
+    color:#fff;
+    font-weight: 400;
+
+}
+
 
 
 .container .right_Side

@@ -12,12 +12,12 @@
             <div class="left_Side">
                 <div class="profileText">
                     <div class="imgBx">
-                        <img src="metro.jpg">
+                        <img src="profil.jpg">
                     </div>
                     <h2>Heberto RAZAFINDRAKOTO<br><span>Développeur Informatique</span></h2>
                 </div>
                 <div class="contactInfo">
-                    <h3 class="title">Contact Info</h3>
+                    <h3 class="title" id="test">Contact Info</h3>
                     <ul>
                         <li>
                             <span class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
@@ -44,6 +44,20 @@
                             <span class="text">Française</span>
                         </li>
                     </ul>
+                    <!-- Pour ajouter les click Mais ici pas besoin
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            $("h3").click(function(){
+                                $('ul li').slideDown('slow');
+                            });
+                        });
+                        $(document).ready(function(){$("h3").dblclick(function(){
+                          $("ul li").slideUp("slow");
+                            });
+                        });
+                    </script>
+                    -->
                 </div>
                 <div class="Education">
                     <h3 class="title">Formation</h3>
@@ -322,6 +336,7 @@
                     <h4>Allometry and environnemental
                         metrics</h4>
                 </div>
+                
             </div>
             <div class="right_Side">
                 <div class="about">
@@ -347,6 +362,9 @@
                         </div>
                         <div class="text">
                             <h4>Responsable technique et Développeur python</h4>
+                            <span class="tooltiptext"> <h5>Outils et technologies:</h5><br><p>GCOS, JCL, Python, Java, Groovy, COBOL, Sheel, SVN, Topaz,
+                                Jenkins, Bugzilla</p>
+                            </span>
                             <p> Développer des outils python permettant la migration des fichiers GCos
                                 vers Z/Os dans le cadre de la modernisation des applications du recouvrement.
                             </p>
@@ -386,6 +404,9 @@
                         </div>
                         <div class="text">
                             <h4>Développeur Web</h4>
+                            <span class="tooltiptext"> <h5>Outils et technologies:</h5><br><p>Gitlab, Github, Git Bash, Jenkins, Jira, D3.js, Jquery, JavaScript,
+                                HTML</p>
+                            </span>
                             <p> Développer des pages Web dédiées à la représentation graphique du
                                 budget annuel pour la mairie de Villeurbanne
                             </p>
@@ -440,6 +461,9 @@
                         </div>
                         <div class="text">
                             <h4>Développeur en cartographie.</h4>
+                            <span class="tooltiptext"> <h5>Outils et technologies:</h5><br><p>Folium; Leaflet; D3.js; Urllib; Flask; Api REST;
+                                Ajax;Jquery; OpenStreetMap; Python; JavaScript; SQL; Mysql; HTML</p> 
+                            </span>
                             <p> Développer une page Web dédiée à la représentation graphique,
                                 interactive, facile à manipuler et à temps réel des flux de services proposé par TDF.
                             </p>
@@ -490,6 +514,10 @@
                         <div class="text">
                             <h4>Informaticien Chargé de l’Evaluation
                                 Spatiale.</h4>
+                            <span class="tooltiptext"> <h5>Outils et technologies:</h5><br><p>ArcGis; QGis; Erdas; Envi; SMART; Image Landsat; Image
+                                sentinelle-2; ArcPy; Python; JavaScript; SQL; Google earth; GPS Tracker;
+                                Global Forest Wátcher; R</p>
+                            </span>
                             <span class="mission">Missions:</span>
                             <ul>
                                 <li>
@@ -523,6 +551,9 @@
                         </div>
                         <div class="text">
                             <h4>Consultant en SIG et traitement d'image.</h4>
+                            <span class="tooltiptext"> <h5>Outils et technologies:</h5><br><p>ArcGis; QGis; Python; JavaScript; SQL; Google earth; GPS
+                                Tracker; R</p>
+                            </span>
                             <span class="mission">Missions:</span>
                             <ul>
                                 <li>
@@ -544,6 +575,9 @@
                         <div class="text">
                             <h4>Stage de fin d’étude en imagerie multi-
                                 modalités.</h4>
+                            <span class="tooltiptext"> <h5>Outils et technologies:</h5><br><p>Matlab; R; Imagerie Thermographique; Imagerie Visible;
+                                Imagerie hyperspectrale; phénotypage</p>
+                            </span>
                             <p> Etudier et exploiter les potentialités des différentes modalités d'imagerie
                                 telles que l'imagerie visible, l'imagerie thermographique, l'imagerie hyper-spectrale
                                 pour la caractérisation et le phénotypage de végétaux.
@@ -556,6 +590,8 @@
                         </div>
                         <div class="text">
                             <h4>Projet de fin d’étude en imagerie visible</h4>
+                            <span class="tooltiptext"> <h5>Outils et technologies:</h5><br><p>Matlab; R; Imagerie Visible</p>
+                            </span>
                             <p> Optimisation et développement d'un algorithme de détection automatique
                                 d’événements sur les ouvrants d'une façade d'un bâtiment pour la mesure des
                                 déperditions thermiques et le suivi du vieillissement des bâtiments en utilisant les
@@ -569,32 +605,44 @@
                     <ul>
                         <li>
                             <div class="img2">
-                                <img src="dgfip.jpg">
+                                <a href="https://www.economie.gouv.fr/dgfip" target="_blank">
+                                    <img src="dgfip.jpg">
+                                </a>
                             </div>
                         </li>
                         <li>
                             <div class="img2">
-                                <img src="tdf.jpg">
+                                <a href="https://www.tdf.fr/" target="_blank">
+                                    <img src="tdf.jpg">
+                                </a>
                             </div>
                         </li>
                         <li>
                             <div class="img2">
-                                <img src="trsb.png">
+                                <a href="https://digiwin.fr/" target="_blank">
+                                    <img src="trsb.png">
+                                </a>
                             </div>
                         </li>
                         <li>
                             <div class="img2">
-                                <img src="mnp.jpg">
+                                <a href="https://digiwin.fr/" target="_blank">
+                                    <img src="mnp.jpg">
+                                </a>
                             </div>
                         </li>
                         <li>
                             <div class="img2">
-                                <img src="laris.jpg">
+                                <a href="https://www.parcs-madagascar.com/" target="_blank">
+                                    <img src="laris.jpg">
+                                </a>
                             </div>
                         </li>
                         <li>
                             <div class="img2">
-                                <img src="univ.jpg">
+                                <a href="https://www.univ-angers.fr/fr/index.html" target="_blank">
+                                    <img src="univ.jpg">
+                                </a>
                             </div>
                         </li>
                     </ul>                            
@@ -602,5 +650,8 @@
             </div>
             <div class="bas"></div>
         </div>
+        <footer>
+            <p>© 2023 Heberto</p>
+        </footer>
     </body>
 </html>

@@ -25,8 +25,6 @@ body
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
-    grid-template-rows : repeat(100px, 2fr) max-content;
-
 }
 .container .left_Side
 {
@@ -40,6 +38,7 @@ body
     background: #490734;
     padding: 40px;
 }
+
 .profileText
 {
     position: relative;
@@ -62,8 +61,8 @@ body
     position: absolute;
     top:0;
     left:0;
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height:200px;
     object-fit: cover;
 }
 .profileText h2
@@ -108,6 +107,7 @@ body
     margin:2px 0;
     cursor: pointer;
 }
+
 .contactInfo ul li .icon
 {
     display: inline-block;
@@ -116,6 +116,7 @@ body
     color:#03a9fa;
     margin-right: 5px;
 }
+
 .contactInfo ul li span
 {
     font-weight: 300;
@@ -229,6 +230,7 @@ body
     margin-right: 40px;
 
 }
+
 .contactInfo.Personalité p
 {
     font-weight: 300;
@@ -247,8 +249,15 @@ body
     font-weight: 400;
 
 }
-
-
+footer
+{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top:260%;
+    background-color: #0552f7;
+    color: #fff;
+}
 
 .container .right_Side
 {
@@ -289,15 +298,15 @@ body
 .ref ul li .img2
 {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 70px;
 }
 .ref ul li .img2 img
 {
     position: absolute;
     top:0;
-    left:0;
-    width: 100%;
+    right: 5px;
+    width: max-content;
     height: 100%;
     object-fit: cover;
 }
@@ -326,7 +335,29 @@ p
 {
     text-transform: uppercase;
     color:#2a7da2;
-    font-size: 16px;   
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.about .box .text .tooltiptext {
+  visibility: hidden;
+  width: 190px;
+  height: max-content;
+  background: #d7e60b;
+  border: #000 1px solid;
+  color: #333;
+  text-align: center;
+  border-radius: 6px;
+  left: 100%;
+  padding: 20px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.about .box .text:hover .tooltiptext {
+  visibility: visible;
 }
 .about .box .text .mission
 {
@@ -341,3 +372,4 @@ p
     font-size: 15px;
     margin-left: 50px;
 }
+

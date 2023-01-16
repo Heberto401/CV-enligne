@@ -247,8 +247,28 @@ body
 {
     color:#fff;
     font-weight: 400;
+    margin-bottom: 100px;
 
 }
+.animation{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    position: relative;
+    animation: linear;
+}
+@keyframes text {
+    from {left: 0px;}
+    to {left: 400px;}
+}
+@media (prefers-reduced-motion: no-preference) {
+    .animation {
+      animation-name: text;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+  }
 .container .right_Side
 {
     position: relative;
@@ -278,11 +298,12 @@ body
 }
 .ref ul li
 {
-    display: inline-block;
+    display: inline-table;
     list-style: none;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 25px;
     cursor: pointer;
+    align-items: center;
 }
 
 .ref ul li .img2
